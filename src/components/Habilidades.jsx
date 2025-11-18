@@ -24,7 +24,7 @@ export default function Habilidades(){
                     <span className="eyebrow">O que sei fazer</span>
                     <h2 className="habilidades__titulo">Habilidades</h2>
                 </header>
-                <ul className="habilidades_barras" aria-label="Barras de proficiência">
+                <ul className="habilidades__barras" aria-label="Barras de proficiência">
                     {skills.map((s) => (
                         <li key={s.nome} className="habilidade">
                             <div className="habilidade__topo">

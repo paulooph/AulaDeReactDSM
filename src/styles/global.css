@@ -244,7 +244,7 @@ p{
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap: 14px;
 }
 
@@ -284,7 +284,7 @@ p{
     transition: width .35s ease;
 }
 
-.habilidade__tecnologias{
+.habilidades__tecnologias{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -368,4 +368,135 @@ p{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+/*---- CONTATO -----*/
+
+.contato{
+    background: var(--bg);
+    padding: 72px 7%;
+    color:var(--texto)
+}
+
+.contato__cabeca{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato__titulo{
+    font-size: 28px;
+    margin: 6px 0 0;
+}
+
+.contato__sub{
+    color: var(--muted);
+    margin: 8px 0 0;
+}
+
+.contato__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(16px, 3vw, 28px);
+    align-items: start;
+}
+
+.contato__infos{
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+.contato__infos p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contato__infos strong{
+    color: var(--marca);
+}
+
+.contato__form{
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 14px;
+    padding: clamp(14px, 3.2vw, 20px);
+    display: grid;
+    gap:12px
+}
+
+.campo{
+    display: grid;
+    gap: 6px;
+}
+
+.campo label{
+    font-size: 14px;
+    color: var(--texto);
+}
+
+.campo input , .campo textarea{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--texto);
+    outline: none;
+}
+
+.campo input:focus,
+.campo textarea:focus{
+    border-color: var(--marca);
+    box-shadow: 0 0 0 3px color-mix(in srgb,
+    var(--marca) 20%, transparent);
+}
+
+/* ---- RODAPE ----- */
+
+.rodape{
+    background: var(--marca);
+    color: var(--bg);
+    padding: 24px 0;
+    text-align: center;
+}
+
+.rodape__conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.rodape__texto{
+    margin: 0;
+    color: var(--bg);
+    font-size: 15px;
+}
+
+.rodape__texto strong{
+    color: var(--muted);
+}
+
+.rodape__links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.rodape__links a{
+    color:var(--borda);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.rodape__links a:hover{
+    color: var(--texto);
+    text-decoration: underline;
 }

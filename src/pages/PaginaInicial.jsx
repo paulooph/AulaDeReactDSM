@@ -3,6 +3,8 @@ import Destaque from "../components/Destaque";
 import Sobre from "../components/Sobre";
 import Habilidades from "../components/Habilidades";
 import Projetos from "../components/Projetos";
+import Contato from "../components/Contato";
+import Rodape from "../components/Rodape";
 
 export function PaginaInicial(){
     return(
@@ -12,6 +14,8 @@ export function PaginaInicial(){
             <Sobre/>
             <Habilidades/>
             <Projetos/>
+            <Contato/>
+            <Rodape/>
         </>    
     );
 }
